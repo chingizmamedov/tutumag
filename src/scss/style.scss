@@ -370,6 +370,36 @@ body {
 .total-free {
     color: #158A19 !important;
 }
+
+.detail {
+    &-item {
+        margin-bottom: 15px;
+    }
+    &-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #777;
+    }
+    &-subtitle {
+        color: #333333;
+    }
+}
+.spasibo-head {
+    margin-bottom: 24px;
+}
+.spasibo-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+.spasibo-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
 @media screen and (min-width: 576px) {
     .container {
         max-width: 720px;
@@ -418,6 +448,10 @@ body {
     }
 }
 @media screen and (max-width: 586px) {
+    .block-title {
+        font-size: 19px;
+        width: 100%;
+    }
     .wrapper_inner {
         padding: 0 20px !important;
     }
@@ -453,5 +487,8 @@ body {
     .radio-title {
         font-size: 14px;
         line-height: 24px !important;
+    }
+    .our-order__header {
+        padding: 0;
     }
 }
