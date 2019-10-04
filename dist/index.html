@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Оформление заказа</title>
 </head>
@@ -15,22 +15,294 @@
         </div>
         <div class="container">
             
-            <div class="production-method">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam veniam, sed nobis dolore iste necessitatibus, nihil corrupti accusamus autem vel officia saepe nam dolor, consequuntur in. Modi rerum harum accusantium?
+            <div class="production-method ">
+                <h2 class="block-title d-flex"><img class="car-img" src="image/car.png" alt=""><span class="car-text">Способ получения заказа</span></h2>
+                <label class="radio-label justify-content-between">
+                    <div class="radio-wrap">
+                        <input class="radio" type="radio" name="pay">
+                        <span class="radio-mask"></span>
+                    </div>
+                    <div class="radio-text flex-grow-1 d-flex">
+                        <div class="radio-title flex-grow-1">Самовывоз из магазина </div>
+                        <span class="radio-subtitle">Бесплатно</span>
+                    </div>                    
+                </label>
+                <div class="final-destination-wrap">
+                    <div class="final-destination">
+                        <p><span>Пункт выдачи:</span> г. Челябинск, ул. Энтузиастов, 12 офис 514</p>
+                    </div>
+                    <div class="final-destination">
+                        <p><span>Пункт выдачи:</span> г. Челябинск, ул. Энтузиастов, 12 офис 514</p>
+                    </div>
+                </div>
+                
+                <label class="radio-label justify-content-between">
+                    <div class="radio-wrap">
+                        <input class="radio" type="radio" name="pay">
+                        <span class="radio-mask"></span>
+                    </div>
+                    <div class="radio-text flex-grow-1 d-flex">
+                        <div class="radio-title flex-grow-1">Рассчитать доставку курьером по городу</div>
+                        <span class="radio-subtitle">от 300 руб.</span>
+                    </div>                    
+                </label>
+                <label class="input-label d-flex flex-column" >
+                    <span class="input-title">Адрес доставки</span>
+                    <input class="input" type="text">
+                </label>
+                <label class="radio-label justify-content-between">
+                    <div class="radio-wrap">
+                        <input class="radio" type="radio" name="pay">
+                        <span class="radio-mask"></span>
+                    </div>
+                    <div class="radio-title flex-grow-1">Доставка по России</div>
+                </label>
             </div>
             <div class="personal-data">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tenetur ullam porro, repudiandae recusandae, nisi est impedit enim sit vitae totam. Quis, quisquam dignissimos! Quia, ipsam officia earum id libero labore, possimus quo soluta, reiciendis a deleniti porro aliquam debitis
-                    epudiandae recusandae, nisi est impedit enim sit vitae totam. Quis, quisquam dignissimos! Quia, ipsam officia earum id libero labore, possimus quo soluta, reiciendis a deleniti porro aliquam debitis.
-                    epudiandae recusandae, nisi est impedit enim sit vitae totam. Quis, quisquam dignissimos! Quia, ipsam officia earum id libero labore, possimus quo soluta, reiciendis a deleniti porro aliquam debitis.</p>
+                <h2 class="block-title d-flex align-content-center"><img class="man-img" src="image/man.png" alt=""><span class="man-text">Личные данные</span></h2>
+                    <div id="form">
+                        <form action="#">
+                            <label class="input-label d-flex flex-column" >
+                                <span class="input-title">Ваше имя<span class="red-star">*</span></span>
+                                <input class="input" type="text">
+                            </label>
+                            <label class="input-label d-flex flex-column" >
+                                <span class="input-title">Ваш телефон<span class="red-star">*</span></span>
+                                <input class="input" type="text">
+                            </label>
+                            <label class="input-label d-flex flex-column" >
+                                <span class="input-title">Ваш телефон<span class="red-star">*</span></span>
+                                <textarea class="input-textarea" id="" cols="20" rows="4"></textarea>
+                            </label>
+                            <span class="additional-up">По желанию</span>
+                            <div class="additional">
+                                <div class="additional-title">Дополнительная информация</div>
+                                <div class="additional-content">
+                                    <div class="additional-intitle">Способ оплаты</div>
+                                    <div class="payment">
+                                        <label class="radio-label">
+                                            <div class="radio-wrap">
+                                                <input class="radio" type="radio" name="pay">
+                                                <span class="radio-mask"></span>
+                                            </div>
+                                            <div class="radio-text">
+                                                <div class="radio-title">Оплата наличными в магазине</div>
+                                            </div>                                            
+                                        </label>
+                                        <label class="radio-label">
+                                            <div class="radio-wrap">
+                                                <input class="radio" type="radio" name="pay">
+                                                <span class="radio-mask"></span>
+                                            </div>
+                                            <div class="radio-text">
+                                                <div class="radio-title">Наличные курьеру</div>
+                                            </div>
+                                        </label>
+                                        <label class="radio-label">
+                                            <div class="radio-wrap">
+                                                <input class="radio" type="radio" name="pay">
+                                                <span class="radio-mask"></span>
+                                            </div>
+                                            <div class="radio-title">Наложенным платежем при получении</div>
+                                        </label>
+                                        <label class="radio-label">
+                                            <div class="radio-wrap">
+                                                <input class="radio" type="radio" name="pay">
+                                                <span class="radio-mask"></span>
+                                            </div>
+                                            <div class="radio-title">Банковский перевод</div>
+                                        </label>
+                                    </div>
+                                    <div class="additional-intitle">Покупатель</div>
+                                    <div class="buyer d-flex">
+                                        <label class="buyer-label d-flex align-items-center">
+                                            <div class="radio-wrap">
+                                                <input data-face="fiz" class="radio radio-facecont radio-fiz" type="radio" name="pay">
+                                                <span class="radio-mask"></span>
+                                            </div>
+                                            <div class="buyer-title">Частное лицо</div>
+                                        </label>
+                                        <label class="buyer-label d-flex align-items-center">
+                                            <div class="radio-wrap">
+                                                <input data-face="yur" class="radio radio-facecont radio-yur" type="radio" name="pay">
+                                                <span class="radio-mask"></span>
+                                            </div>
+                                            <div class="buyer-title">Юр. лицо</div>
+                                        </label>
+                                    </div>
+                                    <div class="fiz-face faces">
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">Ваше имя</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">Ваш E-mail</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                    </div>
+                                    <div class="yur-face faces">
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">Ваше имя</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">Ваш E-mail</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">Название организации</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">Юридический адрес</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">ИНН</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">КПП</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">БИК</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">Расчетный счет</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">Корпоративный счет</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                        <label class="input-label d-flex flex-column" >
+                                            <span class="input-title">Комментарий к заказу</span>
+                                            <input class="input" type="text">
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                                <button class="btn-oformit">Оформить заказ</button>
+                                <label class="conditions d-flex align-items-start">
+                                    <input class="conditions-checkbox" type="checkbox" name="" id="">
+                                    <span>Я согласен на обработку <a href="#">персональных данных</a></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            <div class="production-method">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam veniam, sed nobis dolore iste necessitatibus, nihil corrupti accusamus autem vel officia saepe nam dolor, consequuntur in. Modi rerum harum accusantium?
+            <div class="our-order">
+                <div class="our-order__header d-flex justify-content-between">
+                    <h2 class="block-title d-flex"><img class="busget-img" src="image/busget.png" alt="">Ваш заказ&nbsp;<span class="plus-gift"> + наш подарок!</span></h2>
+                    <span class="edit-list" id="edit-list">Изменить</span>
                 </div>
+                <div class="order-item d-flex">
+                    <div class="order-title__mobile d-none">Умные часы Xiaomi Amazfit Pace Sports Watch black</div>
+                    <div class="order-img">
+                        <img src="image/watch.png" alt="">
+                    </div>
+                    <div class="order-item__info d-flex flex-column flex-grow-1">
+                        <p class="order-title">Умные часы Xiaomi Amazfit Pace Sports Watch black</p>
+                        <div class="order-item__info-deep d-flex">
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Цена</span>
+                                <span class="info-item-data">8 190 руб.</span>
+                            </div>
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Скидка</span>
+                                <span class="info-item-data">0 %</span>
+                            </div>
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Количество</span>
+                                <span class="info-item-data">1 шт</span>
+                            </div>
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Сумма</span>
+                                <span class="info-item-data">8 190 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-item d-flex">
+                    <div class="order-title__mobile d-none">Рюкзак Xiaomi (mi) Commuter</div>
+                    <div class="order-img">
+                        <img src="image/bug.jpg" alt="">
+                    </div>
+                    <div class="order-item__info d-flex flex-column flex-grow-1">
+                        <p class="order-title">Рюкзак Xiaomi (mi) Commuter</p>
+                        <div class="order-item__info-deep d-flex">
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Цена</span>
+                                <span class="info-item-data">3 690 руб.</span>
+                            </div>
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Скидка</span>
+                                <span class="info-item-data">0 %</span>
+                            </div>
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Количество</span>
+                                <span class="info-item-data">1 шт</span>
+                            </div>
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Сумма</span>
+                                <span class="info-item-data">3 690 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-order our-gift">
+                <div class="our-order__header d-flex justify-content-between">
+                    <h2 class="block-title d-flex"><img class="busget-img" src="image/gift.png" alt="">Наши подарки</h2>
+                </div>
+                <div class="order-item d-flex">
+                    <div class="order-title__mobile d-none">Внешний аккумулятор 3000 mAh Mini Mobile Power</div>
+                    <div class="order-img">
+                        <img src="image/accum.png" alt="">
+                    </div>
+                    <div class="order-item__info d-flex flex-column flex-grow-1">
+                        <p class="order-title">Внешний аккумулятор 3000 mAh Mini Mobile Power</p>
+                        <div class="order-item__info-deep d-flex">
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Цена</span>
+                                <span class="info-item-data"><strike>890 руб.</strike></span>
+                            </div>
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Скидка</span>
+                                <span class="info-item-data">0 %</span>
+                            </div>
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Количество</span>
+                                <span class="info-item-data">1 шт</span>
+                            </div>
+                            <div class="info-item d-flex flex-column">
+                                <span class="info-item-name">Сумма</span>
+                                <span class="info-item-data">0 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-info">
+                <div class="total-item">
+                    <span>Товаров на:</span>
+                    <span>11 880 руб.</span>
+                </div>
+                <div class="total-item">
+                    <span>Доставка:</span>
+                    <span class="total-free">Бесплатно</span>
+                </div>
+                <div class="total-item">
+                    <span>Итого:</span>
+                    <span>11 880 руб.</span>
+                </div>
+            </div>
         </div>
-
-
-
+        
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
